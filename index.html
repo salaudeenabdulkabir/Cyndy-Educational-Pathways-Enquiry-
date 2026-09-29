@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyndy Consultancy — Study Abroad Service Directory & Pricelist</title>
+  <meta name="description"
+    content="Explore Cyndy Consultancy's complete study abroad service directory. Scholarships, admissions, visa support, document services and country-specific packages — all in one clear pricelist.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="Logo.jpeg">
+  <link rel="apple-touch-icon" href="Logo.jpeg">
+
+  <!-- Open Graph / Link Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cyndy Consultancy — Study Abroad Pricelist">
+  <meta property="og:description"
+    content="Explore our complete study abroad service directory. Scholarships, admissions, visa support, document services and country-specific packages.">
+  <meta property="og:image" content="Logo.jpeg">
+  <meta property="og:image:alt" content="Cyndy Consultancy Logo">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cyndy Consultancy — Study Abroad Pricelist">
+  <meta name="twitter:description"
+    content="Explore our complete study abroad service directory. Scholarships, admissions, visa support and more.">
+  <meta name="twitter:image" content="Logo.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ====== HERO / HEADER ====== -->
+  <header id="hero">
+    <div class="hero-glow"></div>
+    <nav id="navbar">
+      <div class="nav-brand">
+        <img src="Logo.jpeg" alt="Cyndy Consultancy Logo" class="brand-logo">
+        <span class="brand-text">Cyndy Educational Pathways</span>
+      </div>
+      <button class="nav-cta" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+        View Pricelist
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-tag">Study Abroad Service Directory</p>
+      <h1>Your Complete <span class="accent-grad">Pricelist</span></h1>
+      <p class="hero-sub">
+        Undergraduate &amp; Master's &nbsp;•&nbsp; Admissions &nbsp;•&nbsp; Scholarships &nbsp;•&nbsp; Pathways
+        &nbsp;•&nbsp; Support Services
+      </p>
+      <button class="hero-btn" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+        Explore Services ↓
+      </button>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats-strip">
+      <div class="stat"><span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span><span
+          class="stat-label">Countries</span></div>
+      <div class="stat"><span class="stat-num" data-count="200">0</span><span class="stat-plus">+</span><span
+          class="stat-label">Opportunities</span></div>
+      <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Service Categories</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== CATALOG ====== -->
+  <main id="catalog">
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search country, university, service…" autocomplete="off">
+      </div>
+      <div class="filter-row" id="filterRow">
+        <!-- pills injected by JS -->
+      </div>
+    </div>
+
+    <!-- Category sections rendered by JS -->
+    <div id="sections"></div>
+
+    <!-- Empty state -->
+    <div id="emptyState" class="empty-state hidden">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+      <p>No services match your search.</p>
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p class="footer-note">Prices are confirmed upon consultation. Deadlines and availability vary by intake cycle —
+      always verify current dates with your advisor.</p>
+    <p>&copy; 2026 Cyndy Consultancy. All rights reserved.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
